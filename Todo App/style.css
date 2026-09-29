@@ -1,0 +1,193 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 70px 20px;
+    text-align: center;
+    background-color: azure;
+    color: #39373D;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 30px;
+    font-size: 42px;
+    color: #3859B7;
+    letter-spacing: 1px;
+}
+
+/* Input */
+input {
+    width: 280px;
+    height: 45px;
+    padding: 0 15px;
+
+    border: 2px solid #77A3C8;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #39373D;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: #77A3C8; 
+}
+
+input:focus {
+    border-color: #3859B7;
+    box-shadow: 0 0 8px rgba(56, 89, 183, 0.3);
+}
+
+/* Add Task Button */
+body > button {
+    height: 45px;
+    padding: 0 20px;
+    margin-left: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #3859B7;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+body > button:hover {
+    background-color: #7917F7;
+    transform: translateY(-2px);
+}
+
+body > button:active {
+    transform: translateY(0);
+}
+
+/* Todo List */
+ul {
+    width: 500px;
+    max-width: 100%;
+
+    margin: 40px auto 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+/* Todo Item */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 14px 0;
+    padding: 14px 16px;
+
+    border: 2px solid #77A3C8;
+    border-radius: 10px;
+
+    background-color: white;
+    color: #39373D;
+
+    font-size: 17px;
+    box-shadow: 0 4px 10px rgba(57, 55, 61, 0.08);
+
+    transition: 0.3s ease;
+}
+
+li:hover {
+    border-color: #3859B7;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 16px rgba(56, 89, 183, 0.15);
+}
+
+/* Checkbox */
+.complete {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+
+    cursor: pointer;
+    accent-color: #B6D46A;
+}
+
+/* Task Text */
+li span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Completed Task */
+li.completed span {
+    text-decoration: line-through;
+    color: #77A3C8;
+}
+
+/* Delete Button */
+.delete {
+    height: 32px;
+    margin-left: 15px;
+    padding: 0 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #BA3938;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.delete:hover {
+    background-color: #39373D;
+    transform: scale(1.05);
+}
+
+.delete:active {
+    transform: scale(0.95);
+}
+
+/* For Responsive */
+@media (max-width: 600px) {
+    body {
+        padding-top: 50px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    body > button {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    li {
+        font-size: 15px;
+    }
+}
+
