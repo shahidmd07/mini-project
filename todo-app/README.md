@@ -44,4 +44,6 @@ This project is actively being developed, and additional features and enhancemen
 
 **Completed — Basic Version**
 
-More features and enhancements are coming in future updates.
+**More features and enhancements are coming in future updates**.
+
+**Made with ❤️ by Shahid — have fun and good luck reaching the highest level!**
