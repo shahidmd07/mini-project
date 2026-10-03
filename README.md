@@ -11,6 +11,12 @@ A simple and interactive Todo App that makes managing daily tasks easy. Add task
 
 **Technologies:** HTML5, CSS3, JavaScript
 
+## Simon Says
+
+An interactive memory-based game built with HTML, CSS, and JavaScript where players follow and repeat randomly generated color sequences across increasing levels.
+
+Technologies: HTML5, CSS3, JavaScript
+
 ## More Coming Soon
 
 This repository will continue to grow with new projects and applications as I explore and practice more web development concepts.
@@ -33,7 +39,13 @@ MiniProject/
 │
 ├── README.md
 │
-├── Todo App/
+├── todo-app/
+│   ├── README.md
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
+│
+├── simon-says/
 │   ├── README.md
 │   ├── index.html
 │   ├── style.css
@@ -41,3 +53,5 @@ MiniProject/
 │
 └── More projects coming soon...
 ```
+
+**Made with ❤️ by Shahid — Keep learning, building, and improving!**
