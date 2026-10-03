@@ -36,6 +36,12 @@ Todo App/
 └── app.js
 ```
 
+## Future Development
+
+This project is actively being developed, and additional features and enhancements will be introduced in future updates to further improve the Todo App and overall user experience.
+
 ## Status
 
 **Completed — Basic Version**
+
+More features and enhancements are coming in future updates.
