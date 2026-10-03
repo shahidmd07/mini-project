@@ -54,4 +54,4 @@ This project is actively being developed, and additional features and enhancemen
 
 **More features and enhancements are coming in future updates.**
 
-**Made with ❤️ — have fun and good luck reaching the highest level!**
+**Made with ❤️ by Shahid — have fun and good luck reaching the highest level!**
