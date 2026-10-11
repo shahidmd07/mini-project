@@ -1,25 +1,24 @@
 # MiniProject
 
-A growing collection of beginner-friendly web development projects built to practice programming, problem-solving, and practical development skills. Each project focuses on turning ideas into working applications and is organized in its own folder for easy exploration.
+A collection of beginner-friendly web development projects built to practice programming and develop practical skills. Each project is organized in its own folder for easy exploration.
 
-
-## Project
+## Projects
 
 ### Todo App
 
-A simple and interactive Todo App that makes managing daily tasks easy. Add tasks, mark them as completed, and remove them with a clean and responsive interface.
+A simple and interactive Todo App for managing daily tasks. Add tasks, mark them as completed, and remove them using a clean interface.
 
 **Technologies:** HTML5, CSS3, JavaScript
 
-## Simon Says
+### Simon Says
 
-An interactive memory-based game built with HTML, CSS, and JavaScript where players follow and repeat randomly generated color sequences across increasing levels.
+An interactive memory game built with HTML, CSS, and JavaScript. Remember and repeat color sequences correctly as the game progresses through increasingly challenging levels.
 
-Technologies: HTML5, CSS3, JavaScript
+**Technologies:** HTML5, CSS3, JavaScript
 
 ## More Coming Soon
 
-This repository will continue to grow with new projects and applications as I explore and practice more web development concepts.
+New projects will be added as I continue learning and exploring web development.
 
 ## Technologies
 
@@ -32,26 +31,23 @@ This repository will continue to grow with new projects and applications as I ex
 - Git
 - GitHub
 
-## Structure
+## Project Structure
 
 ```text
 MiniProject/
-│
 ├── README.md
-│
-├── todo-app/
+├── Todo App/
 │   ├── README.md
 │   ├── index.html
 │   ├── style.css
 │   └── app.js
-│
 ├── simon-says/
 │   ├── README.md
 │   ├── index.html
 │   ├── style.css
-│   └── app.js
-│
+│   ├── app.js
+│   └── sounds/
 └── More projects coming soon...
 ```
 
-**Made with ❤️ by Shahid — Keep learning, building, and improving!**
+**Made with ❤️ by Shahid**
