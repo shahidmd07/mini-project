@@ -1,38 +1,256 @@
 * {
-    text-align: center;
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.btn {
-    height: 150px;
-    width: 150px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 1.8rem;
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26364a;
+
+    background-color: azure;
+    transition: background-color 0.2s ease;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #243b53;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #52657a;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.score-container div {
+    padding: 12px 20px;
+
+    min-width: 150px;
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    background: #acd4fe;
+    border: 1px solid #b8cde5;
+
+    box-shadow: 0 4px 10px rgba(42, 91, 145, 0.12);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.score-container div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 16px rgba(42, 91, 145, 0.2);
+}
+
+.score-container span {
+    display: block;
+    font-size: 0.85rem;
+    color: #405875;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.score-container strong {
+    display: block;
+    font-size: 1.6rem;
+    color: #1e3a5f;
+    font-weight: 700;
+}
+
+.progress-container {
+    width: 80%;
+    margin: 0 auto 25px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    font-size: 0.9rem;
+    color: #173f6b;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #d4e0ef;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0%;
+    height: 100%;
+
+    background: #5b8fd1;
+
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+#start-btn {
+    padding: 12px 28px;
+    margin-bottom: 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #315f96;
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#start-btn:hover {
+    background: #264d7c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(49, 95, 150, 0.22);
+}
+
+
+#start-btn:active {
+    transform: scale(0.96);
 }
 
 .box-container {
     display: flex;
     justify-content: center;
+    gap: 10px;
+}
+
+.line-one,
+.line-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    height: 150px;
+    width: 150px;
+
+    margin: 10px;
+
+    border-radius: 25px;
+    border: 4px solid #0f172a;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.btn:active {
+    transform: scale(0.95);
 }
 
 .yellow {
     background-color: #f99b45;
 }
-.red{
+
+.red {
     background-color: #d95980;
 }
-.purple{
+
+.purple {
     background-color: #819ff9;
 }
-.green{
-    background-color:#63aac0;
+
+.green {
+    background-color: #63aac0;
 }
 
 .flash {
     background-color: white;
+    box-shadow: 0 0 30px white;
 }
 
 .userflash {
-    background-color: green;
+    background-color: #86efac;
+    box-shadow: 0 0 30px #86efac;
+}
+
+.game-over {
+    animation: gameOverFlash 0.75s ease-out;
+}
+
+@keyframes gameOverFlash {
+    0%, 100% {
+        background-color: #f4f7fb;
+    }
+
+    20%, 60% {
+        background-color: #e53935;
+    }
+
+    40%, 80% {
+        background-color: #f4f7fb;
+    }
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .score-container {
+        gap: 10px;
+    }
+
+    .score-container div {
+        min-width: 130px;
+        padding: 10px;
+    }
+
+    .progress-container {
+        width: 90%;
+    }
+
+    .btn {
+        height: 110px;
+        width: 110px;
+        margin: 7px;
+    }
 }
