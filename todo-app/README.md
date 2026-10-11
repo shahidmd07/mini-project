@@ -4,6 +4,9 @@ A simple and interactive Todo application built with HTML, CSS, and JavaScript t
 
 Add tasks, mark them as completed, and remove them when they are no longer needed, all through a clean, responsive, and user-friendly interface.
 
+## Live Demo
+
+Try the live application: [Todo App](https://shahid-todoapp.netlify.app)
 
 ## Features
 
