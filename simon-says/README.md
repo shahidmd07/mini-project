@@ -4,7 +4,7 @@ A simple and interactive Simon Says game built with HTML, CSS, and JavaScript. T
 
 ## Live Demo
 
-Try the live application: [Todo App](https://shahid-simonsays.netlify.app)
+Try the live application: [Simon Says](https://shahid-simonsays.netlify.app)
 
 ## Features
 
