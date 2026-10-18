@@ -2,6 +2,10 @@
 
 A simple and interactive Simon Says game built with HTML, CSS, and JavaScript. The game challenges players to remember and repeat color sequences in the correct order, with each level introducing a longer sequence and making the game progressively more challenging.
 
+## Live Demo
+
+Try the live application: [Todo App](https://shahid-simonsays.netlify.app)
+
 ## Features
 
 - Start or restart the game using the start button
