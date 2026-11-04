@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 8080;
+const PORT = process.env.PORT || 8080;
 const path = require("path");
 const axios = require("axios");
 
@@ -74,7 +74,7 @@ app.get("/weather/:query", async (req, res) => {
     }
 });
 
-app.listen(port, (req, res) => {
-    console.log(`server is listening on ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is listening on ${PORT}`);
 });
 
