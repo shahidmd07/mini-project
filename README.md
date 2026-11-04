@@ -16,6 +16,12 @@ An interactive memory game built with HTML, CSS, and JavaScript. Remember and re
 
 **Technologies:** HTML5, CSS3, JavaScript
 
+### Weather App
+
+A simple and interactive Weather App that allows users to search for a city, state, or country and view its current weather information, including temperature, humidity, wind speed, precipitation probability, and geographical coordinates.
+
+Technologies: HTML5, CSS3, JavaScript, Node.js, Express.js, EJS, Axios, RESTful API, OpenWeather API
+
 ## More Coming Soon
 
 New projects will be added as I continue learning and exploring web development.
@@ -25,6 +31,10 @@ New projects will be added as I continue learning and exploring web development.
 - HTML5
 - CSS3
 - JavaScript
+- Node.js
+- Express.js
+- EJS
+- RESTful API
 
 ## Tools
 
@@ -35,18 +45,32 @@ New projects will be added as I continue learning and exploring web development.
 
 ```text
 MiniProject/
+│
+├── .gitignore
 ├── README.md
-├── Todo App/
+│
+├── todo-app/
 │   ├── README.md
 │   ├── index.html
 │   ├── style.css
 │   └── app.js
+│
 ├── simon-says/
 │   ├── README.md
 │   ├── index.html
 │   ├── style.css
 │   ├── app.js
 │   └── sounds/
+│
+├── weather-app/
+│   ├── README.md
+│   ├── assests/
+│   ├── public/
+│   ├── views/
+│   ├── index.js
+│   ├── package.json
+│   └── package-lock.json
+│
 └── More projects coming soon...
 ```
 
