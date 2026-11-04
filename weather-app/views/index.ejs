@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="app-card">
+            <!-- Header Section -->
+            <div class="header">
+                <div class="header-left">
+                    <i class="fa-solid fa-cloud-sun logo-icon"></i>
+                    <h2>Weather App</h2>
+                </div>
+                <div class="header-right">
+                    <img src="/weather.png" alt="weather.img" class="top-weather-img" />
+                </div>
+            </div>
+
+            <!-- Hero Text Section -->
+            <div class="hero-section">
+                <h1>Discover Your Weather</h1>
+                <p>Explore current weather conditions anywhere in the world.</p>
+            </div>
+
+            <!-- Search Form Section -->
+            <div class="search-box">
+                <form method="POST" action="/weather/query">
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-location-dot input-icon"></i>
+                        <input type="text" name="query" placeholder="Enter city, state or country..." required />
+                    </div>
+                    <button type="submit" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search
+                    </button>
+                </form>
+            </div>
+
+            <!-- Feature Banner Section -->
+            <div class="banner">
+                <img src="/globe.png" alt="earth.img" class="banner-img globe-img" />
+                <div class="banner-text">
+                    <h3>Know the weather. Plan your day.</h3>
+                    <p>From sunny skies to rainy days, stay prepared wherever you are.</p>
+                </div>
+                <img src="/umbrella.png" alt="umbrella.img" class="banner-img umbrella-img" />
+            </div>
+        </div>
+    </body>
+</html>

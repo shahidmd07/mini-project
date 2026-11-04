@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= weather.queryName %> Weather</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="/detail.css">
+    </head>
+    <body>
+        <div class="detail-card">
+            <!-- City Name, Current Temperature and Weather Image -->
+            <div class="detail-header">
+                <h2><%= weather.queryName %></h2>
+                <h4><b><%= weather.tempC %></b>°C / <b><%= weather.tempF %>°F</h4>
+                <img src="/weather.png" alt="weather.img" class="top-weather-img" />
+            </div>
+            <hr>
+            <!-- Weather Condition and Feels-Like Temperature -->
+            <div class="feels-section">
+                <p>
+                    <%= weather.condition %>,
+                    feels like 
+                    <b><%= weather.feelsLikeC %></b>°C / 
+                    <b><%= weather.feelsLikeF %></b>°F
+                </p>
+            </div>
+            <hr>
+            <!-- Weather Details: Humidity, Wind, Precipitation and Coordinates -->
+            <div class="grid-details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <h4>Humidity</h4>
+                    <p><%= weather.humidity %>%</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <h4>Wind</h4>
+                    <p><%= weather.windSpeed %> km/h</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <h4>Precipitation</h4>
+                    <p><%= weather.precipitation %>%</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>Coordinates</h4>
+                    <p><%= weather.coordinates %></p>
+                </div>
+            </div>
+            <hr>
+            <!-- Brief Description of Current Weather -->
+            <div class="description-section">
+                The current temperature in <%= weather.queryName %> is <b><%= weather.tempC %></b>°C with <%= weather.description %> conditions.
+            </div>
+        </div>
+    </body>
+</html>
