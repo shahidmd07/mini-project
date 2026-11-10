@@ -70,7 +70,7 @@ app.get("/weather/:query", async (req, res) => {
         res.render("detail.ejs", { weather: weatherDetails });
 
     } catch (err) {
-        res.status(500).send("Weather API Error. Check terminal.");
+        res.status(500).send("query not found or API error!");
     }
 });
 
